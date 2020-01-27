@@ -1,6 +1,6 @@
 {
-	"short_name": "Wildscript Tech",
-	"name": "Wildscript Technologies",
+	"short_name": "KAEMS",
+	"name": "Karnataka Arya Ediga Mahila Sangha",
 	"icons": [
 		{
 			"src": "resources/images/icons/favicon_48.png",
@@ -33,12 +33,12 @@
 			"sizes": "512x512"
 		}
 	],
-	"background_color": "#111111",
+	"background_color": "#CCCCCC",
 	"display": "standalone",
 	"orientation": "portrait",
-	"theme_color": "#AEEA00",
+	"theme_color": "#0000FF",
 	"start_url": "index.html",
 	"manifest_version": 2,
 	"version": "1.0",
-	"summary": "Siddhant's Portfolio"
+	"summary": "KAEMS is an NGO that aims for the upliftment and empowerment of families as a system with special focus on women and children."
 }

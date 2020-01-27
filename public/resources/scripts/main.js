@@ -74,14 +74,14 @@ window.onload = function () {
 	/* Initialise Firebase */
 
 	var firebaseConfig = {
-		apiKey: "AIzaSyCmZ7ZPW-MTKYBYMKm61BUNegcN6LHImXs",
-		authDomain: "wildscript-tech.firebaseapp.com",
-		databaseURL: "https://wildscript-tech.firebaseio.com",
-		projectId: "wildscript-tech",
-		storageBucket: "wildscript-tech.appspot.com",
-		messagingSenderId: "165008496476",
-		appId: "1:165008496476:web:8fc21657e7c97eaf8e1399",
-		measurementId: "G-YHZ9SJM4SF"
+		apiKey: "AIzaSyDqxvGjxRd1Nup_VzmqGB8MaTW3pLRg9mQ",
+		authDomain: "kaems-org.firebaseapp.com",
+		databaseURL: "https://kaems-org.firebaseio.com",
+		projectId: "kaems-org",
+		storageBucket: "kaems-org.appspot.com",
+		messagingSenderId: "756686902667",
+		appId: "1:756686902667:web:235398361bab0b845a8b8e",
+		measurementId: "G-P3EYGYK5HV"
 	};
 	firebase.initializeApp(firebaseConfig);
 
@@ -111,7 +111,7 @@ window.onload = function () {
 
 			M.Modal.getInstance(progressDialogModal).open();
 
-			$.get('https://wildscript.tech/addEmail?email=' + email, function (data) {
+			$.get('https://kaems.org/addEmail?email=' + email, function (data) {
 				if (data) {
 
 					/* Hide progress bar */
@@ -120,7 +120,7 @@ window.onload = function () {
 
 					/* Display success message */
 
-					Swal.fire('Perfect!', 'I\'ll stay in touch.', 'success');
+					Swal.fire('Perfect!', 'We\'ll stay in touch.', 'success');
 
 				}
 				else {

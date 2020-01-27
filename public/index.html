@@ -1,65 +1,218 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en_GB" prefix="og: https://ogp.me/ns#">
+
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/7.7.0/firebase-app.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/7.7.0/firebase-auth.js"></script>
-    <script defer src="/__/firebase/7.7.0/firebase-database.js"></script>
-    <script defer src="/__/firebase/7.7.0/firebase-messaging.js"></script>
-    <script defer src="/__/firebase/7.7.0/firebase-storage.js"></script>
-    <!-- initialize the SDK after all desired features are loaded -->
-    <script defer src="/__/firebase/init.js"></script>
+    <!-- Preconnect to resource URLs -->
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
+    <link rel="preconnect" href="https://kaems.org/" crossorigin />
+    <link rel="preconnect" href="https://google.com" crossorigin />
+    <link rel="preconnect" href="https://firebaseremoteconfig.googleapis.com" crossorigin />
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin />
+    <link rel="preconnect" href="https://storage.googleapis.com" crossorigin />
+    <link rel="preconnect" href="https://firebaseinstallations.googleapis.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com/" crossorigin />
+
+    <!-- Basic website information -->
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="cache-control" content="Private" />
+    <meta http-equiv="Expires" content="31536000" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0000FF" />
+    <meta name="Description"
+      content="KAEMS is an NGO that aims for the upliftment and empowerment of families as a system with special focus on women and children." />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="keywords" content="karnataka,arya,ediga,mahila,sangha,women,children,kaems,upliftment,ngo">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph Protocol (OGP) information -->
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Karnataka Arya Ediga Mahila Sangha">
+    <meta property="og:title" content="Karnataka Arya Ediga Mahila Sangha" />
+    <meta property="og:description"
+      content="KAEMS is an NGO that aims for the upliftment and empowerment of families as a system with special focus on women and children." />
+    <meta property="og:url" content="https://kaems.org/" />
+    <meta property="og:image" content="resources/images/icons/og_512.jpg" />
+    <meta property="og:image:alt" content="resources/images/icons/og_512.jpg" />
+    <meta property="og:image:secure_url" content="resources/images/icons/og_512.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="512" />
+    <meta property="og:image:height" content="512" />
+    <meta property="og:locale" content="en_GB" />
+
+    <!-- Load website resources -->
+
+    <link rel="icon" href="resources/images/icons/favicon_48.png" />
+    <link rel="shortcut icon" type="image/png" href="resources/images/icons/favicon_48.png" />
+    <link rel="apple-touch-icon" href="resources/images/icons/favicon_192.png">
+    <link rel="manifest" href="manifest.json" />
+    <link type="text/css" rel="stylesheet" href="resources/styles/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="resources/styles/main.css" media="screen,projection" />
+
+    <!-- Webpage title -->
+
+    <title>KAEMS</title>
+
   </head>
+
   <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
-    </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+    <!-- What if some browser does not support javascript or has turned it off? -->
 
-        try {
-          let app = firebase.app();
-          let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
-          document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
+    <noscript>
+      Unfortunately, your browser does not support javascript. Either that or it's disabled. Maybe try to
+      enable it? Privacy centric browsers like Tor or Brave tend to do this more often than you think. Don't
+      worry. I respect your privacy and will never collect data from you without your explicit consent. If you
+      want to know for sure, head over to our <a href="https://kaems.org/privacy" target="_blank" rel="noreferrer"
+        title="Privacy Policy" alt="https://kaems.org/privacy">
+        Privacy Policy
+      </a>.
+    </noscript>
+
+    <!-- Main Content -->
+
+    <main>
+
+      <!-- Progress Dialog Modal -->
+
+      <div id="progressDialogModal" class="modal">
+        <div class="modal-content">
+          <div class="progress">
+            <div class="indeterminate"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navbar (For large and extra large screens) -->
+
+      <nav>
+        <div class="nav-wrapper" style="box-shadow: none !important;">
+          <a class="brand-logo">
+            <img class="lazyload responsive-img hide-on-med-and-down" data-src="resources/images/icons/favicon_192.webp"
+              style="height:3em;" alt="Unable to load image" />
+            <h3 class="hide-on-large-only" style="margin-top: 0.3em; font-size: 0.8em;">
+              KAEMS
+            </h3>
+            <a data-target="sidenav" class="sidenav-trigger hide-on-large-only"><i class="material-icons">menu</i></a>
+          </a>
+          <ul class="right hide-on-med-and-down">
+            <li>
+              <a style="font-size: 2em;">KAEMS</a>
+            </li>
+          </ul>
+          <ul class="center hide-on-med-and-down">
+            <li>
+              <a href="#headerH" class="active" id="projects"><i class="material-icons left">laptop_chromebook</i>
+                Projects</a>
+            </li>
+            <li>
+              <a href="#footerH" id="contact"><i class="material-icons left">phone</i>Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Sidenav (For small and medium sized screens) -->
+
+      <ul id="sidenav" class="sidenav hide-on-large-only">
+        <li>
+          <div class="user-view">
+            <img class=" circle lazyload responsive-img" data-src="resources/images/icons/favicon_192.webp"
+              alt="Unable to load image" />
+            <span class="name">KAEMS</span>
+          </div>
+        </li>
+        <li><a href="#headerH" class="active" id="sides1trigger"><i
+              class="material-icons">laptop_chromebook</i>Projects</a>
+        </li>
+        <li><a href="#footerH" id="sides2trigger"><i class="material-icons">phone</i>Contact Us</a></li>
+      </ul>
+
+    </main>
+
+    <!-- Webpage footer -->
+
+    <footer class="page-footer">
+      <div class="container">
+        <div id="footer_row" class="row">
+          <div class="col s12 m12 l6 xl6">
+            <h4 id="footerH" class="scrollspy">Contact Us</h4>
+            <p>
+              You can <a class="tooltipped" data-position="bottom" data-tooltip="Click here to call us"
+                href="tel:+919900608821" target="_blank" rel="noreferrer" title="Click here to call us">call</a> or <a
+                class="tooltipped" data-position="bottom" data-tooltip="Click here to WhatsApp us"
+                href="https://wa.me/919900608821" target="_blank" rel="noreferrer"
+                title="Click here to WhatsApp us">WhatsApp</a> us on <a class="tooltipped" data-position="bottom"
+                data-tooltip="Click here to call us" href="tel:+919900608821" target="_blank" rel="noreferrer"
+                title="Click here to call us">+91 99006
+                08821</a> or <a class="tooltipped" data-position="bottom" data-tooltip="Click here to send us an email"
+                href="mailto:siddhantvinchurkar@gmail.com" target="_blank" rel="noreferrer"
+                title="Click here to send us an email">send an
+                email</a> to <a class="tooltipped" data-position="bottom" data-tooltip="Click here to send us an email"
+                href="mailto:siddhantvinchurkar@gmail.com" target="_blank" rel="noreferrer"
+                title="Click here to send us an email">siddhantvinchurkar@gmail.com</a>.
+              Alternatively, you can leave us your email address and We will get in touch with you as soon as
+              we possibly can.
+            </p>
+            <div class="row">
+              <div class="col s12 m12 l12 xl12 input-field">
+                <i class="material-icons prefix">email</i>
+                <input placeholder="rahul.prakash34@gmail.com" id="email" type="email" class="validate"
+                  pattern="[a-z0-9._%+-]+@+[a-z]+.+[a-z]" required>
+                <label for="email">Email address *</label>
+                <span class="helper-text" data-error="Please enter a valid email address" data-success="Perfect.">Don't
+                  worry, your data is well protected.</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s12 m12 l12 xl12">
+                <a id="submit" class="waves-effect waves-light btn lime accent-4 black-text disabled"><i
+                    class="material-icons right">send</i>Submit</a>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m12 l5 xl5 offset-l1 offset-xl1">
+            <h4>What's KAEMS?</h4>
+            <div class="row valign-wrapper">
+              <div class="col s12 m12 l9 xl9">
+                <p>
+                  KAEMS is an NGO that aims for the upliftment and empowerment of families as a system with special
+                  focus on women and children.
+                </p>
+                <p>
+                  The Sangha was registered in 1988 with the noble cause of service to work towards achievement of goals
+                  for the economically backward women in society.
+                </p>
+              </div>
+              <div class="col s12 m12 l3 xl3">
+                <img data-src="resources/images/icons/favicon_512.webp" alt="Unable to load image"
+                  class="lazyload circle responsive-img materialboxed"
+                  data-caption="Karnataka Arya Ediga Mahila Sangha">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          &copy; <span id="footerYear">2020</span> <b>Karnataka Arya Ediga Mahila Sangha</b>. All rights reserved.
+          <a class="right" href="privacy/" rel="noreferrer" target="_blank">Privacy Policy</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Essential scripts -->
+
+    <script type="application/javascript" src="resources/scripts/lazysizes.min.js" async></script>
+    <script type="application/javascript" src="resources/scripts/jquery.min.js" defer></script>
+    <script type="application/javascript" src="resources/scripts/materialize-passive-listener-mod.min.js"
+      defer></script>
+    <script type="application/javascript" src="resources/scripts/firebase-app.js" defer></script>
+    <script type="application/javascript" src="resources/scripts/main.js" defer></script>
+
   </body>
+
 </html>
