@@ -26,10 +26,15 @@ window.onload = function () {
 	/* Initialize Materialize CSS components */
 
 	$('.modal#progressDialogModal').modal({ dismissible: false });
+	$('.modal#scholarshipFormDialogModal').modal({ dismissible: true });
+	$('.modal#matrimonialFormDialogModal').modal({ dismissible: true });
+	$('.modal#hostelFormDialogModal').modal({ dismissible: true });
+	$('.modal#membershipFormDialogModal').modal({ dismissible: true });
 	$('.tooltipped').tooltip();
 	$('.sidenav').sidenav();
 	$('.materialboxed').materialbox();
 	$('.scrollspy').scrollSpy();
+	$('.parallax').parallax();
 
 	/* Ensure the sidenav closes after a selection is made */
 

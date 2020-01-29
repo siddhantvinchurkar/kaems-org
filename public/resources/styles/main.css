@@ -4,7 +4,7 @@
 html
 {
 	font-family: 'Roboto', sans-serif;
-	background-color: #CCCCCC !important;
+	background-color: #FFFFFF !important;
 }
 
 body
@@ -71,11 +71,6 @@ a{
 .input-field .helper-text
 {
 	color: #AEEA00;
-}
-
-.modal
-{
-	background-color: #000000 !important;
 }
 
 .page-footer
@@ -160,6 +155,52 @@ a{
 	color: #AEEA00 !important;
 }
 
+.parallax-container
+{
+	height: 768px !important;
+}
+
+.row
+{
+	margin-bottom: 0px !important;
+}
+
+.row .col
+{
+	padding: 0px !important;
+}
+
+.pictures
+{
+	padding-bottom: 20px !important;
+}
+
+.sec p
+{
+	color: #000000 !important;
+	font-size: 1.5em !important;
+}
+
+.sec h2, .sec h4, .sec h5, .sec h6, .sec a
+{
+	color: #0000FF !important;
+}
+
+.sec .btn-large, .sec .btn {
+	font-weight: bolder !important;
+	color: #000000 !important;
+}
+
+.sec .address
+{
+	font-size: 1.3em !important;
+}
+
+#parallax_1
+{
+	margin-top:4em !important;
+}
+
 #privacy
 {
 	background-color: #222222 !important;
@@ -187,7 +228,7 @@ a{
   
 ::-webkit-scrollbar-track
 {
-	background: #000000;
+	background: #222222;
 }
   
 ::-webkit-scrollbar-thumb

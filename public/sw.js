@@ -31,7 +31,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "e67c9df646ee901e03065aac674ebec9"
+    "revision": "eda49b52b4d62306aa4c7dac8f909779"
   },
   {
     "url": "manifest.json",
@@ -44,6 +44,14 @@ self.__precacheManifest = [
   {
     "url": "resources/images/404.webp",
     "revision": "0d6ca04f8ceb6d96213aaa60d23266be"
+  },
+  {
+    "url": "resources/images/contact_images/amitha_anand_512.webp",
+    "revision": "c05c996d99684072560d428f32f587cf"
+  },
+  {
+    "url": "resources/images/contact_images/suchetha_kuloor_512.webp",
+    "revision": "361da3b2629945c925dd0e9c872e0327"
   },
   {
     "url": "resources/images/icons/favicon_144.png",
@@ -82,6 +90,18 @@ self.__precacheManifest = [
     "revision": "1e3579ffa3b7de6ecd7f7e3cb95c8a5a"
   },
   {
+    "url": "resources/images/image_1/1366x768.webp",
+    "revision": "852ea6442a5d4129d9f8e850f89cbe99"
+  },
+  {
+    "url": "resources/images/image_1/1920x1080.webp",
+    "revision": "28d06cfe9f6cf9097186c6aaf28884f7"
+  },
+  {
+    "url": "resources/images/image_1/432x768.webp",
+    "revision": "47ba2a8b1a608a19859c9a526aad6ef6"
+  },
+  {
     "url": "resources/scripts/firebase-analytics.js",
     "revision": "326350755aa2a2bf3c73ae9e75886d34"
   },
@@ -99,7 +119,7 @@ self.__precacheManifest = [
   },
   {
     "url": "resources/scripts/main.js",
-    "revision": "5055a43f07e867fe17d654888a0d9718"
+    "revision": "37ead03cc19079432bca65b4e8b93615"
   },
   {
     "url": "resources/scripts/materialize-passive-listener-mod.min.js",
@@ -115,7 +135,7 @@ self.__precacheManifest = [
   },
   {
     "url": "resources/styles/main.css",
-    "revision": "3c27d075ac813a16c448fda95755b881"
+    "revision": "9c70a33fe35271e98b5a5a804564616a"
   },
   {
     "url": "resources/styles/materialize.min.css",
